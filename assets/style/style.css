@@ -1,0 +1,45 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: gray;
+}
+
+.container {
+    width: 655px;
+    height: 347px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.img {
+    position: absolute;
+    left: 20%;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    width: 390px;
+    font-size: 1.7rem;
+    margin: 20px 40px;
+    padding: 5px;
+    border-bottom: 1px solid lightgray;
+}
+
+.reply {
+    font-size: 2rem;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
