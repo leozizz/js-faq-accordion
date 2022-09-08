@@ -1,45 +1,53 @@
 body {
     height: 100vh;
+    background: gray;
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    background-color: gray;
-}
-
-.container {
-    width: 655px;
-    height: 347px;
-    border-radius: 20px;
-    background-color: white;
-    display: flex;
     align-items: center;
-    justify-content: flex-end;
 }
 
-.img {
+h3 {
+    font-size: 1.7rem;
+}
+
+img {
     position: absolute;
     left: 20%;
 }
 
-.button {
+hr {
+    width: 400px;
+    height: 1px;
+    border: none;
+    background: #D4D4D4;
+    margin-right: 40px;
+}
+
+.container {
     display: flex;
-    justify-content: space-between;
-    width: 390px;
-    font-size: 1.7rem;
-    margin: 20px 40px;
-    padding: 5px;
-    border-bottom: 1px solid lightgray;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 655px;
+    height: 347px;
+    border-radius: 20px;
+    background-color: white;
 }
 
-.reply {
-    font-size: 2rem;
+.botao {
+    width: 400px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+    text-align: left;
+    margin-right: 37px;
 }
 
-.show {
-    display: block;
+.ativo, .botao:hover {
+    background-color: gray;
 }
 
-.hide {
+.painel {
     display: none;
 }
