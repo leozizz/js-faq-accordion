@@ -37,27 +37,47 @@ main {
     margin-bottom: 14px;
 }
 
-.container .question {
-    font-size: 1.7rem;
-    font-weight: 500;
-}
-
-.container .reply {
-    font-size: 1.5rem;
-    font-weight: 300;
-}
-
 .content .items .item {
     cursor: pointer;
-    background: url(../img/seta.svg) top 6px right 0/12px no-repeat;
+    background: url(../img/seta.svg) top 5px right 0/12px no-repeat;
     border-bottom: 1px solid #ccc;
     margin: 10px 0;
 }
 
-.seta {
-    
+.content .items .item:last-child {
+    border-bottom: none;
 }
 
-.hide {
+.content .items .item .question {
+    transition: 0.2s ease;
+    padding-bottom: 15px;
+    font-size: 1.7rem;
+    font-weight: 500;
+    width: 90%;
+}
+
+.item .question:hover {
+    color: #f47c57;
+}
+
+.content .items .item .reply {
     display: none;
+    padding-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* ACTIVE ACCORDION STYLE */
+
+.content .items .item.active h2 {
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.content .items .item.active .reply {
+    display: block;
+}
+
+.content .items .item.active {
+    background-image: url(../img/seta\ aberta.svg);
 }
