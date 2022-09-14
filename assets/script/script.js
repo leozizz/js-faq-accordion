@@ -1,24 +1,16 @@
-// const botao = document.querySelectorAll(".botao")
-// const painel = document.querySelectorAll(".painel")
-// let i = 0
+const questionAndReplyItems = document.querySelectorAll(".item")
 
-// for (let i = 0; i < botao.length; i++) {
-//     funcao()
-// }
+//execute the function for each item, removing and adding ".active" class to the right items
+questionAndReplyItems.forEach(function(item){
+    item.addEventListener("click", function() {
 
-// function funcao() {
-//     let = respostaAtual = i - 1
-//     botao[i].addEventListener("click", function () {
-//         /* "toggle" troca entre adicionar e remover a classe "ativo" que irá deixar o botão clicado em destaque*/
-//         this.classList.remove("ativo")
-//         this.classList.add("ativo")
+        const actualActiveItem = document.querySelector(".active")
 
-//         //Faz a troca entre esconder e mostrar o painel ativo
-//         let painel = this.nextElementSibling
-//         if (painel.style.display === "block") {
-//             painel.style.display = "none"
-//         } else {
-//             painel.style.display = "block"
-//         }
-//     })
-// }
+        //check if there is any item with ".active" class, then remove it
+        if (actualActiveItem) {
+            actualActiveItem.classList.remove("active")
+        }
+
+        item.classList.add("active")
+    })
+})
